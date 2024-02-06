@@ -31,31 +31,46 @@ const Hero = () => {
           prepares to go live. Follow us on our socials and get the latest
           insights of Project BFM before the rest of the world.
         </p>
-        <div className="inline-flex flex-col items-center gap-[25px] mt-[42px] w-1/4">
+        <div className="inline-flex flex-col items-center gap-[25px] mt-[42px] lg:w-1/4 w-1/2">
           <p className="text-white text-center sm:text-2xl text-base font-semibold leading-normal">
             Follow us on Socials
           </p>
           <div className="flex items-start gap-[15px]">
             <Link
+              className="w-full h-full"
               href={
                 "https://www.instagram.com/bfmofficial__?igsh=aWdvdDJoeGE4enVu"
               }
             >
-              <Image src={require("@/public/insta.svg")} alt="" />
+              <Image
+                src={require("@/public/insta.svg")}
+                alt=""
+                className="shrink-0 object-cover w-full aspect-square"
+              />
             </Link>
             <Link
+              className="w-full h-full"
               href={
                 "https://x.com/bfmofficial_/status/1751225895354785903?s=46"
               }
             >
-              <Image src={require("@/public/x.svg")} alt="" />
+              <Image
+                src={require("@/public/x.svg")}
+                alt=""
+                className="shrink-0 object-cover w-full aspect-square"
+              />
             </Link>
             <Link
+              className="w-full h-full"
               href={
                 "https://www.linkedin.com/posts/blackfoxmetaverse_bornformotive-blackfoxmetaverse-bfm-activity-7156272565085179904-hESt?utm_source=share&utm_medium=member_ios"
               }
             >
-              <Image src={require("@/public/lin.svg")} alt="" />
+              <Image
+                src={require("@/public/lin.svg")}
+                alt=""
+                className="shrink-0 object-cover w-full aspect-square"
+              />
             </Link>
           </div>
         </div>
